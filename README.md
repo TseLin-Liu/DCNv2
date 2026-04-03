@@ -6,7 +6,7 @@
 
 [DCNv2](https://github.com/lbin/DCNv2): Time per kernel: 5.08029 ms, GLOPS: 38162.7
 
-**Ours**: Time per kernel: 2.74774 m, GLOPS: 70558.9
+**Ours**: Time per kernel: 2.74774 ms, GLOPS: 70558.9
 
 ## The method of FLOPS comutation 
 - FLOPS = Batch * Height_out * Width_out * Channels_out * (10.0 * kernel_h * kernel_w * C + 2.0 *  kernel_h * kernel_w)
