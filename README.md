@@ -9,7 +9,7 @@
 **Ours**: Time per kernel: 2.74774 ms, GLOPS: 70558.9
 
 ## The method of FLOPS comutation 
-- FLOPS = Batch * Height_out * Width_out * Channels_out * (10.0 * kernel_h * kernel_w * C + 2.0 *  kernel_h * kernel_w)
+> FLOPS = Batch * Height_out * Width_out * Channels_out * (10.0 * kernel_h * kernel_w * C + 2.0 *  kernel_h * kernel_w)
 
 ## Dependence
 - Pytorch: 2.1.2+cu121
