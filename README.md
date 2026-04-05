@@ -8,7 +8,8 @@
 [DCNv2](https://github.com/lbin/DCNv2): Time per kernel: 5.08029 ms, GFLOPS: 38162.7
 
 **Ours**: Time per kernel: 2.74774 ms, GFLOPS: 70558.9
-**Ours + Double buffer**: GFLOPS: 81930.4, refer to [DCN_double_buffer](https://github.com/lbin/DCNv2/)
+
+**Ours + Double buffer**: GFLOPS: 81930.4, refer to [DCN_double_buffer](https://github.com/TseLin-Liu/DCNv2/blob/main/com_2buffer.cu)
 
 ## The method of GFLOPS computation 
 > FLOPS = Batch * Height_out * Width_out * Channels_out * (10.0 * kernel_h * kernel_w * C + 2.0 *  kernel_h * kernel_w)
