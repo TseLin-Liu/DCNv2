@@ -11,6 +11,8 @@
 
 **Ours + Double buffer**: GFLOPS: 81930.4, refer to [DCN_double_buffer](https://github.com/TseLin-Liu/DCNv2/blob/main/com_2buffer.cu)
 
+**Ours + Double buffer + cp_asyc**: TFLOPS: 90.2  **!!**, refer to [DCN_double_buffer](https://github.com/TseLin-Liu/DCNv2/blob/main/com_2buffer_cpasyc.cu)
+
 ## The method of GFLOPS computation 
 > FLOPS = Batch * Height_out * Width_out * Channels_out * (10.0 * kernel_h * kernel_w * C + 2.0 *  kernel_h * kernel_w)
 >
