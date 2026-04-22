@@ -28,7 +28,7 @@ transformer2 = transforms.Compose(transformer2)
 mnist_train = torchvision.datasets.CIFAR10(root="./", train=True, transform=transformer1, target_transform=None, download=True)
 mnist_test = torchvision.datasets.CIFAR10(root="./", train=False, transform=transformer2, target_transform=None, download=True)
 
-batch_size = 128                    
+batch_size = 32                    
 
 if sys.platform.startswith('win'):
     num_workers = 0

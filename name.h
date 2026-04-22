@@ -10,6 +10,7 @@
 #define TILE_Y 16
 #define TILE_X 16
 #define TILE 64
+#define DLA 256
 
 
 at::Tensor MyDCN_forward(

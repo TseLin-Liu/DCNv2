@@ -21,7 +21,8 @@ setup(
         CUDAExtension(
             name="Conv2d._C",
             sources=[
-            "com.cu",
+            "forward.cu",
+            "backward.cu",
             "ext.cpp"],
             # include_dirs=[cutlass_include],  
         )

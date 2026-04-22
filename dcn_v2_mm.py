@@ -35,7 +35,7 @@ class _DCNv2(Function):
     @once_differentiable
     def backward(ctx, grad_output):
         input, weight, mask, offset, bias = ctx.saved_tensors
-        grad_input, grad_offset, grad_mask, grad_weight, grad_bias = _C.dcn_v2_backward(
+        grad_input, grad_offset, grad_mask, grad_weight,grad_bias = _C.dcn_v2_backward(
             input,
             weight,
             mask,
