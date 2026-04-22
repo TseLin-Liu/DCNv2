@@ -374,7 +374,7 @@ __device__ void dcn_bilinear_coordinate_gradient_cuda(
 }
 
 
-// 反向传播：计算对掩码的梯度
+// 反向传播：计算对偏移，掩码的梯度
 __global__ void im2colcuda_backward_offset_mask(
     const float *grad_output, 
     const float *input,
@@ -471,7 +471,7 @@ __device__ float dmcn_get_gradient_weight_cuda(
     return weight;
 }
 
-// 反向传播：计算对偏移的梯度
+// 反向传播：计算对输入的梯度
 __global__ void im2colcuda_backward_input(
         const float *grad_output, 
         const float *mask,
